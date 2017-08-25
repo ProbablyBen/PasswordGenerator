@@ -1,6 +1,6 @@
 ﻿namespace PasswordGenerator
 {
-    partial class Form1
+    partial class FrmMain
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.btnGeneratePassword = new System.Windows.Forms.Button();
             this.grpPasswordOptions = new System.Windows.Forms.GroupBox();
             this.lblLength = new System.Windows.Forms.Label();
@@ -47,10 +47,10 @@
             this.btnGeneratePassword.Location = new System.Drawing.Point(180, 152);
             this.btnGeneratePassword.Name = "btnGeneratePassword";
             this.btnGeneratePassword.Size = new System.Drawing.Size(110, 23);
-            this.btnGeneratePassword.TabIndex = 3;
+            this.btnGeneratePassword.TabIndex = 5;
             this.btnGeneratePassword.Text = "Generate Password";
             this.btnGeneratePassword.UseVisualStyleBackColor = true;
-            this.btnGeneratePassword.Click += new System.EventHandler(this.btnGeneratePassword_Click);
+            this.btnGeneratePassword.Click += new System.EventHandler(this.BtnGeneratePassword_Click);
             // 
             // grpPasswordOptions
             // 
@@ -129,19 +129,19 @@
             this.txtOutput.Name = "txtOutput";
             this.txtOutput.ReadOnly = true;
             this.txtOutput.Size = new System.Drawing.Size(166, 20);
-            this.txtOutput.TabIndex = 5;
+            this.txtOutput.TabIndex = 6;
             // 
             // btnCopy
             // 
             this.btnCopy.Location = new System.Drawing.Point(180, 207);
             this.btnCopy.Name = "btnCopy";
             this.btnCopy.Size = new System.Drawing.Size(108, 23);
-            this.btnCopy.TabIndex = 6;
+            this.btnCopy.TabIndex = 7;
             this.btnCopy.Text = "Copy to clipboard";
             this.btnCopy.UseVisualStyleBackColor = true;
-            this.btnCopy.Click += new System.EventHandler(this.btnCopy_Click);
+            this.btnCopy.Click += new System.EventHandler(this.BtnCopy_Click);
             // 
-            // Form1
+            // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -153,7 +153,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximumSize = new System.Drawing.Size(481, 271);
             this.MinimumSize = new System.Drawing.Size(481, 271);
-            this.Name = "Form1";
+            this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Password Generator";
             this.grpPasswordOptions.ResumeLayout(false);
